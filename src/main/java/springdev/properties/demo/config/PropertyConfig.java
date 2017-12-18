@@ -25,6 +25,9 @@ public class PropertyConfig {
     @Autowired
     private Environment environment;
 
+    @Value("${username.mainapp}")
+    String usernameFromMain;
+
     @Value("${username}")
     String username;
     @Value("${password}")
