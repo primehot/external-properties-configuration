@@ -45,7 +45,7 @@ public class PropertyConfig {
     @Bean
     public FakeDataSource getFakeDataSource() {
         FakeDataSource dataSource = new FakeDataSource();
-        dataSource.setUsername(environment.getProperty("username_override"));
+        dataSource.setUsername(usernameFromMain);
         dataSource.setPassword(password);
         dataSource.setUrl(url);
 
